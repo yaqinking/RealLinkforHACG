@@ -10,6 +10,11 @@
 
 @interface ViewController : NSViewController
 
+@property (weak) IBOutlet NSTextField *inputCode;
+@property (weak) IBOutlet NSTextField *outputLink;
+
+-(IBAction)addMagnetPrefix :(id)sender;
+-(IBAction)addBaidupanPrefix:(id)sender;
 
 @end
 

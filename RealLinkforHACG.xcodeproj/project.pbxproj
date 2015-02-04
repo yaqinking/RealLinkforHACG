@@ -404,6 +404,7 @@
 				F42E1A781A821A13001CB683 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F42E1A791A821A13001CB683 /* Build configuration list for PBXNativeTarget "RealLinkforHACGTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +413,7 @@
 				F42E1A7B1A821A13001CB683 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
