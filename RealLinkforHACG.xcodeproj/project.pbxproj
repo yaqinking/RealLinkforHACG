@@ -1,0 +1,419 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F42E1A5D1A821A13001CB683 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F42E1A5C1A821A13001CB683 /* AppDelegate.m */; };
+		F42E1A5F1A821A13001CB683 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F42E1A5E1A821A13001CB683 /* main.m */; };
+		F42E1A621A821A13001CB683 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F42E1A611A821A13001CB683 /* ViewController.m */; };
+		F42E1A641A821A13001CB683 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F42E1A631A821A13001CB683 /* Images.xcassets */; };
+		F42E1A671A821A13001CB683 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F42E1A651A821A13001CB683 /* Main.storyboard */; };
+		F42E1A731A821A13001CB683 /* RealLinkforHACGTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F42E1A721A821A13001CB683 /* RealLinkforHACGTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F42E1A6D1A821A13001CB683 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F42E1A4E1A821A13001CB683 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F42E1A551A821A13001CB683;
+			remoteInfo = RealLinkforHACG;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F42E1A561A821A13001CB683 /* RealLinkforHACG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealLinkforHACG.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F42E1A5A1A821A13001CB683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F42E1A5B1A821A13001CB683 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F42E1A5C1A821A13001CB683 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F42E1A5E1A821A13001CB683 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F42E1A601A821A13001CB683 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F42E1A611A821A13001CB683 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F42E1A631A821A13001CB683 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F42E1A661A821A13001CB683 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F42E1A6C1A821A13001CB683 /* RealLinkforHACGTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealLinkforHACGTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F42E1A711A821A13001CB683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F42E1A721A821A13001CB683 /* RealLinkforHACGTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RealLinkforHACGTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F42E1A531A821A13001CB683 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F42E1A691A821A13001CB683 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F42E1A4D1A821A13001CB683 = {
+			isa = PBXGroup;
+			children = (
+				F42E1A581A821A13001CB683 /* RealLinkforHACG */,
+				F42E1A6F1A821A13001CB683 /* RealLinkforHACGTests */,
+				F42E1A571A821A13001CB683 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F42E1A571A821A13001CB683 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F42E1A561A821A13001CB683 /* RealLinkforHACG.app */,
+				F42E1A6C1A821A13001CB683 /* RealLinkforHACGTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F42E1A581A821A13001CB683 /* RealLinkforHACG */ = {
+			isa = PBXGroup;
+			children = (
+				F42E1A5B1A821A13001CB683 /* AppDelegate.h */,
+				F42E1A5C1A821A13001CB683 /* AppDelegate.m */,
+				F42E1A601A821A13001CB683 /* ViewController.h */,
+				F42E1A611A821A13001CB683 /* ViewController.m */,
+				F42E1A631A821A13001CB683 /* Images.xcassets */,
+				F42E1A651A821A13001CB683 /* Main.storyboard */,
+				F42E1A591A821A13001CB683 /* Supporting Files */,
+			);
+			path = RealLinkforHACG;
+			sourceTree = "<group>";
+		};
+		F42E1A591A821A13001CB683 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F42E1A5A1A821A13001CB683 /* Info.plist */,
+				F42E1A5E1A821A13001CB683 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F42E1A6F1A821A13001CB683 /* RealLinkforHACGTests */ = {
+			isa = PBXGroup;
+			children = (
+				F42E1A721A821A13001CB683 /* RealLinkforHACGTests.m */,
+				F42E1A701A821A13001CB683 /* Supporting Files */,
+			);
+			path = RealLinkforHACGTests;
+			sourceTree = "<group>";
+		};
+		F42E1A701A821A13001CB683 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F42E1A711A821A13001CB683 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F42E1A551A821A13001CB683 /* RealLinkforHACG */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F42E1A761A821A13001CB683 /* Build configuration list for PBXNativeTarget "RealLinkforHACG" */;
+			buildPhases = (
+				F42E1A521A821A13001CB683 /* Sources */,
+				F42E1A531A821A13001CB683 /* Frameworks */,
+				F42E1A541A821A13001CB683 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RealLinkforHACG;
+			productName = RealLinkforHACG;
+			productReference = F42E1A561A821A13001CB683 /* RealLinkforHACG.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F42E1A6B1A821A13001CB683 /* RealLinkforHACGTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F42E1A791A821A13001CB683 /* Build configuration list for PBXNativeTarget "RealLinkforHACGTests" */;
+			buildPhases = (
+				F42E1A681A821A13001CB683 /* Sources */,
+				F42E1A691A821A13001CB683 /* Frameworks */,
+				F42E1A6A1A821A13001CB683 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F42E1A6E1A821A13001CB683 /* PBXTargetDependency */,
+			);
+			name = RealLinkforHACGTests;
+			productName = RealLinkforHACGTests;
+			productReference = F42E1A6C1A821A13001CB683 /* RealLinkforHACGTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F42E1A4E1A821A13001CB683 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = yaqinking;
+				TargetAttributes = {
+					F42E1A551A821A13001CB683 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					F42E1A6B1A821A13001CB683 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = F42E1A551A821A13001CB683;
+					};
+				};
+			};
+			buildConfigurationList = F42E1A511A821A13001CB683 /* Build configuration list for PBXProject "RealLinkforHACG" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F42E1A4D1A821A13001CB683;
+			productRefGroup = F42E1A571A821A13001CB683 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F42E1A551A821A13001CB683 /* RealLinkforHACG */,
+				F42E1A6B1A821A13001CB683 /* RealLinkforHACGTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F42E1A541A821A13001CB683 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F42E1A641A821A13001CB683 /* Images.xcassets in Resources */,
+				F42E1A671A821A13001CB683 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F42E1A6A1A821A13001CB683 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F42E1A521A821A13001CB683 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F42E1A621A821A13001CB683 /* ViewController.m in Sources */,
+				F42E1A5F1A821A13001CB683 /* main.m in Sources */,
+				F42E1A5D1A821A13001CB683 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F42E1A681A821A13001CB683 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F42E1A731A821A13001CB683 /* RealLinkforHACGTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F42E1A6E1A821A13001CB683 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F42E1A551A821A13001CB683 /* RealLinkforHACG */;
+			targetProxy = F42E1A6D1A821A13001CB683 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F42E1A651A821A13001CB683 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F42E1A661A821A13001CB683 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F42E1A741A821A13001CB683 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F42E1A751A821A13001CB683 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F42E1A771A821A13001CB683 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RealLinkforHACG/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F42E1A781A821A13001CB683 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RealLinkforHACG/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F42E1A7A1A821A13001CB683 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RealLinkforHACGTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RealLinkforHACG.app/Contents/MacOS/RealLinkforHACG";
+			};
+			name = Debug;
+		};
+		F42E1A7B1A821A13001CB683 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RealLinkforHACGTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RealLinkforHACG.app/Contents/MacOS/RealLinkforHACG";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F42E1A511A821A13001CB683 /* Build configuration list for PBXProject "RealLinkforHACG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F42E1A741A821A13001CB683 /* Debug */,
+				F42E1A751A821A13001CB683 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F42E1A761A821A13001CB683 /* Build configuration list for PBXNativeTarget "RealLinkforHACG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F42E1A771A821A13001CB683 /* Debug */,
+				F42E1A781A821A13001CB683 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F42E1A791A821A13001CB683 /* Build configuration list for PBXNativeTarget "RealLinkforHACGTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F42E1A7A1A821A13001CB683 /* Debug */,
+				F42E1A7B1A821A13001CB683 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F42E1A4E1A821A13001CB683 /* Project object */;
+}
