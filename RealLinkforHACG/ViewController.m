@@ -12,15 +12,21 @@
 
 -(IBAction)addMagnetPrefix:(id)sender
 {
-//    NSString *message = [[NSString alloc] initWithFormat:@"Hello, %@", [textField stringValue]];
-//    [myLabel setStringValue:message];
-//    
     NSString *addedMagnetPrefix = [[NSString alloc] initWithFormat:@"magnet:?xt=urn:btih:%@", [_inputCode stringValue]];
     [_outputLink setStringValue:addedMagnetPrefix];
+    
+    NSPasteboard *pasteBoard = [NSPasteboard generalPasteboard];
+    [pasteBoard clearContents];
+    [pasteBoard writeObjects:@[[_outputLink stringValue]]];
 }
 
 -(IBAction)addBaidupanPrefix:(id)sender
 {
+    NSString *addedBaidupanPrefix = [[NSString alloc] initWithFormat:@"http://pan.baidu.com/s/%@",[_inputCode stringValue]];
+    [_outputLink setStringValue:addedBaidupanPrefix];
+    NSPasteboard *pasteBoard = [NSPasteboard generalPasteboard];
+    [pasteBoard clearContents];
+    [pasteBoard writeObjects:@[[_outputLink stringValue]]];
     
 }
 
