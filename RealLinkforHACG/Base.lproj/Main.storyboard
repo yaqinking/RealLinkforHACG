@@ -669,11 +669,11 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="201"/>
+                        <rect key="frame" x="0.0" y="0.0" width="463" height="201"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xU2-I0-bU1">
-                                <rect key="frame" x="69" y="164" width="56" height="17"/>
+                                <rect key="frame" x="18" y="164" width="56" height="17"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="输入代码" id="9xB-vx-LWl">
                                     <font key="font" size="13" name="STHeitiSC-Light"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -681,7 +681,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5ex-hI-QbP">
-                                <rect key="frame" x="208" y="159" width="308" height="22"/>
+                                <rect key="frame" x="135" y="159" width="308" height="22"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="flV-MB-1uZ">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -689,25 +689,15 @@
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xro-pd-GdT">
-                                <rect key="frame" x="69" y="115" width="56" height="17"/>
+                                <rect key="frame" x="18" y="113" width="56" height="17"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="输出链接" id="0SJ-af-WOO">
                                     <font key="font" size="13" name="STHeitiSC-Light"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ojs-bc-zqe">
-                                <rect key="frame" x="373" y="44" width="116" height="25"/>
-                                <buttonCell key="cell" type="roundTextured" title="添加百度盘前缀" bezelStyle="texturedRounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ko9-5F-gkz">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" size="13" name="HiraKakuProN-W3"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="addBaidupanPrefix:" target="XfG-lQ-9wD" id="vki-vQ-oao"/>
-                                </connections>
-                            </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FAF-bj-Ti2">
-                                <rect key="frame" x="129" y="44" width="116" height="25"/>
+                                <rect key="frame" x="32" y="44" width="116" height="25"/>
                                 <buttonCell key="cell" type="roundTextured" title="添加Magnet前缀" bezelStyle="texturedRounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="cXp-dU-WTi">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" size="13" name="HiraKakuProN-W3"/>
@@ -717,13 +707,23 @@
                                 </connections>
                             </button>
                             <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MRn-jv-ZRv">
-                                <rect key="frame" x="208" y="110" width="308" height="22"/>
+                                <rect key="frame" x="135" y="113" width="308" height="22"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="7XD-2A-kbD">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ojs-bc-zqe">
+                                <rect key="frame" x="327" y="44" width="116" height="25"/>
+                                <buttonCell key="cell" type="roundTextured" title="添加百度盘前缀" bezelStyle="texturedRounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ko9-5F-gkz">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="HiraKakuProN-W3"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="addBaidupanPrefix:" target="XfG-lQ-9wD" id="vki-vQ-oao"/>
+                                </connections>
+                            </button>
                         </subviews>
                     </view>
                     <connections>
@@ -733,7 +733,7 @@
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="374" y="604.5"/>
+            <point key="canvasLocation" x="37.5" y="598.5"/>
         </scene>
     </scenes>
 </document>
