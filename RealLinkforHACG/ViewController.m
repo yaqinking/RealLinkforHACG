@@ -27,6 +27,8 @@
     NSPasteboard *pasteBoard = [NSPasteboard generalPasteboard];
     [pasteBoard clearContents];
     [pasteBoard writeObjects:@[[_outputLink stringValue]]];
+    //Open URL
+    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:addedBaidupanPrefix]];
     
 }
 

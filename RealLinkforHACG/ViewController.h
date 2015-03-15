@@ -15,6 +15,5 @@
 
 -(IBAction)addMagnetPrefix :(id)sender;
 -(IBAction)addBaidupanPrefix:(id)sender;
-
 @end
 
