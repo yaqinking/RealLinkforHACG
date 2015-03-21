@@ -8,7 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface ViewController : NSViewController
+@interface ViewController : NSViewController<NSTextFieldDelegate>
 
 @property (weak) IBOutlet NSTextField *inputCode;
 @property (weak) IBOutlet NSTextField *outputLink;

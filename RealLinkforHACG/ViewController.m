@@ -32,11 +32,43 @@
     
 }
 
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [_inputCode setTarget:self];
+    [_inputCode setAction:@selector(autoOpenURLAndCopyToPasteboard:)];
+
     
     // Do any additional setup after loading the view.
 }
+
+- (void)autoOpenURLAndCopyToPasteboard:(id)sender{
+    NSString *inputCodeValue = [_inputCode stringValue];
+    if(![ inputCodeValue isEqualToString:@""]){
+        if (inputCodeValue.length > 10) {
+            NSString *addedMagnetPrefix = [[NSString alloc] initWithFormat:@"magnet:?xt=urn:btih:%@", inputCodeValue];
+            [_outputLink setStringValue:addedMagnetPrefix];
+            
+            NSPasteboard *pasteBoard = [NSPasteboard generalPasteboard];
+            [pasteBoard clearContents];
+            [pasteBoard writeObjects:@[[_outputLink stringValue]]];
+        }
+        else if (inputCodeValue.length <10){
+            NSString *addedBaidupanPrefix = [[NSString alloc] initWithFormat:@"http://pan.baidu.com/s/%@",inputCodeValue];
+            [_outputLink setStringValue:addedBaidupanPrefix];
+            
+            NSPasteboard *pasteBoard = [NSPasteboard generalPasteboard];
+            [pasteBoard clearContents];
+            [pasteBoard writeObjects:@[[_outputLink stringValue]]];
+            //Open URL
+            [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:addedBaidupanPrefix]];
+        }
+        
+    }
+   
+}
+
 
 - (void)setRepresentedObject:(id)representedObject {
     [super setRepresentedObject:representedObject];
