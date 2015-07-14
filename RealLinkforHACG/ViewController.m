@@ -12,64 +12,59 @@
 
 -(IBAction)addMagnetPrefix:(id)sender
 {
-    NSString *addedMagnetPrefix = [[NSString alloc] initWithFormat:@"magnet:?xt=urn:btih:%@", [_inputCode stringValue]];
-    [_outputLink setStringValue:addedMagnetPrefix];
-    
-    NSPasteboard *pasteBoard = [NSPasteboard generalPasteboard];
-    [pasteBoard clearContents];
-    [pasteBoard writeObjects:@[[_outputLink stringValue]]];
+    [self copyMagnetLink];
 }
 
 -(IBAction)addBaidupanPrefix:(id)sender
 {
-    NSString *addedBaidupanPrefix = [[NSString alloc] initWithFormat:@"http://pan.baidu.com/s/%@",[_inputCode stringValue]];
-    [_outputLink setStringValue:addedBaidupanPrefix];
-    NSPasteboard *pasteBoard = [NSPasteboard generalPasteboard];
-    [pasteBoard clearContents];
-    [pasteBoard writeObjects:@[[_outputLink stringValue]]];
-    //Open URL
-    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:addedBaidupanPrefix]];
-    
+    [self openBaiduPanLink];
 }
-
-
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    // Do any additional setup after loading the view.
     [_inputCode setTarget:self];
     [_inputCode setAction:@selector(autoOpenURLAndCopyToPasteboard:)];
-
-    
-    // Do any additional setup after loading the view.
 }
 
 - (void)autoOpenURLAndCopyToPasteboard:(id)sender{
     NSString *inputCodeValue = [_inputCode stringValue];
     if(![ inputCodeValue isEqualToString:@""]){
         if (inputCodeValue.length > 10) {
-            NSString *addedMagnetPrefix = [[NSString alloc] initWithFormat:@"magnet:?xt=urn:btih:%@", inputCodeValue];
-            [_outputLink setStringValue:addedMagnetPrefix];
-            
-            NSPasteboard *pasteBoard = [NSPasteboard generalPasteboard];
-            [pasteBoard clearContents];
-            [pasteBoard writeObjects:@[[_outputLink stringValue]]];
+            [self copyMagnetLink];
         }
         else if (inputCodeValue.length <10){
-            NSString *addedBaidupanPrefix = [[NSString alloc] initWithFormat:@"http://pan.baidu.com/s/%@",inputCodeValue];
-            [_outputLink setStringValue:addedBaidupanPrefix];
-            
-            NSPasteboard *pasteBoard = [NSPasteboard generalPasteboard];
-            [pasteBoard clearContents];
-            [pasteBoard writeObjects:@[[_outputLink stringValue]]];
-            //Open URL
-            [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:addedBaidupanPrefix]];
+            [self openBaiduPanLink];
         }
         
     }
    
 }
+- (void)copyMagnetLink {
+    if ([[_inputCode stringValue] containsString:@"保护版权"]) {
+        [_inputCode setStringValue:[[_inputCode stringValue] stringByReplacingOccurrencesOfString:@"保护版权 本站不提供下载" withString:@""]];
+    }
+    NSString *addedMagnetPrefix = [[NSString alloc] initWithFormat:@"magnet:?xt=urn:btih:%@", [_inputCode stringValue]];
+    [_outputLink setStringValue:addedMagnetPrefix];
+    
+    [self writeToPasteboard];
+}
 
+- (void)openBaiduPanLink {
+    NSString *inputCodeValue = [_inputCode stringValue];
+    NSString *addedBaidupanPrefix = [[NSString alloc] initWithFormat:@"http://pan.baidu.com/s/%@",inputCodeValue];
+    [_outputLink setStringValue:addedBaidupanPrefix];
+    
+    [self writeToPasteboard];
+    //Open URL
+    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:addedBaidupanPrefix]];
+}
 
+- (void)writeToPasteboard {
+    NSPasteboard *pasteBoard = [NSPasteboard generalPasteboard];
+    [pasteBoard clearContents];
+    [pasteBoard writeObjects:@[[_outputLink stringValue]]];
+}
 - (void)setRepresentedObject:(id)representedObject {
     [super setRepresentedObject:representedObject];
     
